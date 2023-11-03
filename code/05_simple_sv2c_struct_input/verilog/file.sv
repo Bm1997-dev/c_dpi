@@ -5,7 +5,7 @@ typedef struct {
     real       D;
 } pkt_t;
 
-module top();
+module tb_top();
     import "DPI-C" function int myFunc(inout pkt_t v);
 
     pkt_t  pkt;
@@ -17,7 +17,7 @@ module top();
        pkt.D = 1.3e10;
        ret = myFunc(pkt);
        #1; $write("\n");
-       if (ret==0) $display("%m OK ", ret);
+       if (ret==0) $display("%m.OK ", ret);
        else        $display("%m Failed ", ret);
     end
 endmodule

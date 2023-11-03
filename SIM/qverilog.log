@@ -1,0 +1,16 @@
+Start time: 12:27:37 on Nov 03,2023
+qverilog ..\code\50_simple_c2sv\c\function.c ..\code\50_simple_c2sv\verilog\file.sv 
+-- Compiling module top
+
+Top level modules:
+	top
+-- Compiling DPI/PLI C file ..\code\50_simple_c2sv\c\function.c
+** Error: (qverilog-70) Compilation of the C/C++ src files failed with the error messages given below.
+
+..\code\50_simple_c2sv\c\function.c:2:10: fatal error: dpiheader.h: No such file or directory
+    2 | #include "dpiheader.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+
+End time: 12:27:37 on Nov 03,2023, Elapsed time: 0:00:00
+Errors: 1, Warnings: 0
