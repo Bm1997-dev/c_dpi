@@ -1,5 +1,5 @@
 module top();
-    import "DPI-C" function int myFunc(output int v[]);
+    import "DPI-C" function int myFunc(inout int v[]);
 
     int dynArr[];
     int ret, idx;

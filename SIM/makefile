@@ -2,10 +2,16 @@
 COMMON_PATH = ..\code
 C_FILE = c\function.c
 SV_FILE = verilog\file.sv
-
+C1_FILE = c\function1.c
+C2_FILE = c\function2.c
+C3_FILE = c\function3.c
+C4_FILE = c\function4.c
 
 run1:
 	qverilog $(COMMON_PATH)\01_simple_sv2c\$(C_FILE) $(COMMON_PATH)\01_simple_sv2c\$(SV_FILE)
+
+run2:
+	qverilog $(COMMON_PATH)\02_simple_sv2c_return\$(C1_FILE) $(COMMON_PATH)\02_simple_sv2c_return\$(C2_FILE) $(COMMON_PATH)\02_simple_sv2c_return\$(C3_FILE) $(COMMON_PATH)\02_simple_sv2c_return\$(C4_FILE) $(COMMON_PATH)\02_simple_sv2c_return\$(SV_FILE)
   
 run3:
 	qverilog $(COMMON_PATH)\03_simple_sv2c_array_input\$(C_FILE) $(COMMON_PATH)\03_simple_sv2c_array_input\$(SV_FILE)

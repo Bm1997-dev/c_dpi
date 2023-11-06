@@ -11,10 +11,10 @@ module tb_top();
     pkt_t  pkt;
     int ret;
     initial begin
-       pkt.A = 8'h41;
+       pkt.A = 8'h45;
        pkt.B = 100;
        pkt.C = 100.1;
-       pkt.D = 1.3e10;
+       pkt.D = 45.214569;
        ret = myFunc(pkt);
        #1; $write("\n");
        if (ret==0) $display("%m.OK ", ret);

@@ -15,7 +15,7 @@ module top();
        #1; $write("\n");
        if (ret!=0) $display("%m Failed ", ret);
        else begin
-            $display("%m pkt.A = %c", pkt.A);
+            $display("%m pkt.A = %s", pkt.A);
             $display("%m pkt.B = %d", pkt.B);
             $display("%m pkt.C = %f", pkt.C);
             $display("%m pkt.D = %f", pkt.D);
