@@ -8,6 +8,7 @@ module top;
     integer iA, iB, iC;
     shortreal fF;
     real dD, dE;
+    
     initial begin
       iA = myCFunc1();
       //return value of 5

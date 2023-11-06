@@ -5,8 +5,8 @@
 int myFunc(const svOpenArrayHandle r)
 {
     int i;
-    int low = svLow(r, 1);
-    int high = svHigh(r, 1);
+    int low = svLow(r, 1);  //0
+    int high = svHigh(r, 1);  //4
     // int re = svSize(r, 1);
     // int re = svLeft(r, 1);
     int re = svSizeOfArray(r);
